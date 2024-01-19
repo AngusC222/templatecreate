@@ -1,18 +1,19 @@
 {
-  "name": "templates",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "templatecreate",
+  "version": "0.0.3",
+  "description": "Auto generate code snippets",
+  "keywords": ["cli", "javascript"],
+  "main": "./src/main.js",
+  "bin": "./src/main.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "gussy1212",
+  "license": "MIT",
+  "homepage": "https://github.com/AngusC222/templatecreate#templatecreate",
   "dependencies": {
     "inquirer": "^9.2.12",
     "js-yaml": "^4.1.0",
     "ora": "^8.0.1",
+    "path": "^0.12.7",
     "repositories": "^0.7.2",
     "simple-git": "^3.22.0"
   }

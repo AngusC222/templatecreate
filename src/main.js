@@ -1,12 +1,15 @@
 #!/usr/local/bin/node
 
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 import inquirer from 'inquirer';
 import simpleGit from 'simple-git';
 import ora from 'ora';
 import yaml from 'js-yaml';
 import fs from 'fs';
 
-const repositories = yaml.load(fs.readFileSync('./repositories.yml', 'utf8'));
+const repositories = yaml.load(fs.readFileSync(path.join(path.resolve(dirname(fileURLToPath(import.meta.url))), 'repositories.yml'), 'utf8'));
 
 async function projectName() {
   const answers = await inquirer.prompt({
